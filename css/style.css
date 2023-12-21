@@ -1,0 +1,45 @@
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: #f7ecde;
+}
+
+.main h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 28%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260 !important;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+.main h1:hover h1::after {
+  z-index: 0;
+}
+.main h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+}
+
+.main .dotLine {
+  width: 59%;
+  height: 3px;
+  border-bottom: 2px dotted #000;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+  background: -webkit-linear-gradient(#738b4c, #bdb760);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

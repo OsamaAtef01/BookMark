@@ -1,0 +1,20 @@
+@media screen and (max-width: 992px) {
+    body:not(:has(:target)) .home-link::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.work:target) .work-link::before,
+body:has(.blog:target) .blog-link::before,
+body:has(.drop:target) .drop-link::before,
+body:has(.contact:target) .contact-link::before {
+  width: 5%;
+  left: 0;
+}
+}
+
+@media screen and (max-width: 992px) {
+    .navbar .nav-item a:hover::before {
+        width: 7%;
+        left: 0;
+      }
+}

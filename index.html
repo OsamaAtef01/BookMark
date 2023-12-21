@@ -1,0 +1,75 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>Bookmark</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&family=Pacifico&family=Playpen+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- ===== favicon ===== -->
+  <link rel="icon" href="images/R.png" />
+  <!-- ===== Font Awesome Icon Library ===== -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- ===== Bootstrap Framework ===== -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- ===== Main Style sheet ===== -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="container">
+
+  <div class="container py-5 mx-auto main position-relative d-flex flex-column justify-content-center align-items-center flex-column">
+  
+      <h1 class=" position-relative">Bookmarker</h1>
+
+    <!-- <div
+      class="bookmark-body py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4"
+    > -->
+    <div class="dotLine pt-5"></div>
+      <h2 class=" py-2 text-white fw-bold">
+        <i class="fa-solid fa-bookmark" style="color: white"></i>
+        Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark" style="color: white"></i>
+      </h2>
+          <div class="dotLine"></div>
+
+    </div>
+    <div class="site-name w-100 d-flex flex-column justify-content-center ">
+      <label for="bookmarkName" class="pb-2 fw-bold">
+        <i class="fa-solid fa-book-bookmark pe-2"></i>
+        Site Name</label
+      >
+      <input
+        type="text"
+        placeholder="Bookmark Name"
+        class="form-control"
+        id="bookmarkName"
+      />
+    </div>
+    <div class="site-url w-100 py-4 mb-0 d-flex flex-column justify-content-center">
+      <label for="bookmarkURL" class="pb-2 fw-semibold">
+        <i class="fa-solid fa-link pe-2"></i>Site URL</label
+      >
+      <input
+        type="url"
+        placeholder="Website URL With https:"
+        class="form-control"
+        id="bookmarkURL"
+      />
+    </div>
+    <button onclick="addBookMark()" class="btn btn-submit btn-danger my-3 w-100 px-5" id="submitBtn">Submit</button>
+      <table class=" table text-center py-2">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
